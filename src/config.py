@@ -18,8 +18,8 @@ if kernel:
         input_data_dir = Path('/kaggle/input/freesound-audio-tagging-2019/')
     save_data_dir = Path('/kaggle/working/')
 else:
-    input_data_dir = Path('/workdir/data/')
-    save_data_dir = Path('/workdir/data/')
+    input_data_dir = Path('/home/vano/wrkdir/datasets/freesound-audio-tagging-2019/')
+    save_data_dir = Path('/home/vano/wrkdir/projects_data/argus_freesound/')
 
 train_curated_dir = input_data_dir / 'train_curated'
 train_noisy_dir = input_data_dir / 'train_noisy'
@@ -50,8 +50,8 @@ else:
 folds_data_pkl_dir = save_data_dir / 'folds_data'
 augment_folds_data_pkl_dir = save_data_dir / 'augment_folds_data'
 noisy_data_pkl_dir = save_data_dir / 'noisy_data'
-corrections_json_path = Path('/workdir/corrections.json')
-noisy_corrections_json_path = Path('/workdir/noisy_corrections.json')
+corrections_json_path = Path('corrections.json')
+noisy_corrections_json_path = Path('noisy_corrections.json')
 
 n_folds = 5
 folds = list(range(n_folds))

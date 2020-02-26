@@ -133,8 +133,9 @@ if __name__ == "__main__":
         json.dump(PARAMS, outfile)
 
     folds_data = load_folds_data(use_corrections=CORRECTIONS)
-    noisy_data = load_noisy_data()
-    corrected_noisy_data = get_corrected_noisy_data()
+    # TODO fix
+    # noisy_data = load_noisy_data()
+    # corrected_noisy_data = get_corrected_noisy_data()
 
     for fold in config.folds:
         val_folds = [fold]

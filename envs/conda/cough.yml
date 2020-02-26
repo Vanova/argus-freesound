@@ -1,0 +1,65 @@
+###
+# create environment: conda env create -f cough.yml
+###
+
+name: cough
+channels:
+  - https://conda.anaconda.org/trung 
+  - https://conda.anaconda.org/conda-forge
+  - https://conda.anaconda.org/numba
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.6
+  - Cython
+
+  # scienctific computing
+  - numpy
+  - scipy
+  - pytorch=1.4.0
+  - torchvision
+
+  # visualization
+  - sympy
+
+  # CLI UI
+  - docopt
+
+  # Configs
+  - dotmap
+
+  # speech processing
+  - libsamplerate
+  - pysoundfile # read sph audio file python
+  - resampy
+
+  # data science tools
+  - pymc
+  - pygpu
+  - scikit-learn
+
+  # data management
+  - h5py # create dataset
+  - pytables
+  - pymongo
+  - pyyaml
+  - lxml
+  - openpyxl # read excel
+  - xlwt # create excel
+  - msgpack-python # binary serialization format
+
+  - llvmlite
+  
+  - pip:
+    # Lock version for key libraries only
+    - pytorch-argus
+    - librosa==0.5.0
+    - pydot
+    - pydot-ng>=1.0.0
+    - six>=1.10.0
+    - pafy
+    - soundfile
+    - joblib==0.11
+    - sounddevice # capture or play audio
+    - Flask==1.0.2
+    - gunicorn
