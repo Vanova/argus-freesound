@@ -17,7 +17,7 @@ The [Argus](https://github.com/lRomul/argus) framework for PyTorch was employed.
 
 ### Data preprocessing
 
-Log-scaled mel-spectrograms is the modern standard way of the data representation in CNN-based audio scene classification. [Converting audio to spectrograms](src/audio.py) in this solution was inspired by the [daisukelab's data preprocessing notebook](https://www.kaggle.com/daisukelab/creating-fat2019-preprocessed-data). Audio config parameters:  
+Log-scaled mel-spectrograms is the modern standard way of the data representation in CNN-based audio scene classification. [Converting audio to spectrograms](src/features/audio.py) in this solution was inspired by the [daisukelab's data preprocessing notebook](https://www.kaggle.com/daisukelab/creating-fat2019-preprocessed-data). Audio config parameters:  
 ```
 sampling_rate = 44100
 hop_length = 345 * 2

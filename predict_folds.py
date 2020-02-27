@@ -4,10 +4,10 @@ import numpy as np
 import pandas as pd
 
 from src.predictor import Predictor
-from src.audio import read_as_melspectrogram
+from src.features.audio import read_as_melspectrogram
 from src.transforms import get_transforms
 from src.metrics import LwlrapBase
-from src.utils import get_best_model_path, gmean_preds_blend
+from src.utils.utils import get_best_model_path, gmean_preds_blend
 from src.datasets import get_test_data
 from src import config
 
