@@ -1,5 +1,6 @@
 ###
 # create environment: conda env create -f cough.yml
+#  conda install pytorch==1.0.0 torchvision==0.2.1 cuda80 -c pytorch
 ###
 
 name: cough
@@ -16,9 +17,7 @@ dependencies:
   # scienctific computing
   - numpy
   - scipy
-  - pytorch=1.4.0
-  - torchvision
-
+  
   # visualization
   - sympy
 
@@ -37,9 +36,13 @@ dependencies:
   - pymc
   - pygpu
   - scikit-learn
+  - pytorch=1.0.0
+  - torchvision=0.2.1
+  - cuda80
 
   # data management
   - h5py # create dataset
+  - pandas
   - pytables
   - pymongo
   - pyyaml
@@ -53,7 +56,7 @@ dependencies:
   - pip:
     # Lock version for key libraries only
     - pytorch-argus
-    - librosa==0.5.0
+    - librosa
     - pydot
     - pydot-ng>=1.0.0
     - six>=1.10.0
@@ -61,5 +64,3 @@ dependencies:
     - soundfile
     - joblib==0.11
     - sounddevice # capture or play audio
-    - Flask==1.0.2
-    - gunicorn
