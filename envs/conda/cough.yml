@@ -42,6 +42,7 @@ dependencies:
 
   # data management
   - h5py # create dataset
+  - pandas
   - pytables
   - pymongo
   - pyyaml
